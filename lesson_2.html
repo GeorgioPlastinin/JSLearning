@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script async>
+        //var a = 1, b = 1, c, d;
+        //c = ++a; alert(c);           // 2 (0 + 1 + a(1))  возвращает значение переменной "c" после выполнения
+        //d = b++; alert(d);           // 1 (b(1)) возвращает значение переменной до выполнения
+        //c = (2+ ++a); alert(c);      // 5 (2 + 1+1+a(1)) возвращает значение переменной "c" после выполнения
+        //d = (2+ b++); alert(d);      // 4 (2 + b(1) + 1) Присутсвует сложение
+        //alert(a);                    // 3 Изменили переменную путем сложения инкеремента
+        //alert(b);                    // 3 Изменили переменную путем сложения инкеремента
+
+        //var a = 2;
+        //var x = 1 + (a *= 2); //5
+        //alert(x)
+
+        var a = 5
+        var b = 7
+        if (a >= 0 && b >= 0){
+            alert("Разность: " + (a - b))
+        }
+        else if (a < 0 && b < 0) {
+            alert("Произведение: " + (a * b))
+        } 
+        else {
+            alert("Cумма: " + (a + b))
+        }
+
+        var a = parseInt(prompt("Введи число от 1 до 15"))
+        
+        switch (a) {
+            case 1:
+                alert("1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15")
+                break;
+            case 2:
+                alert("2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15")
+                break;
+            case 3:
+                alert("3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15")
+                break;
+            case 4:
+                alert("4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15")
+                break;
+            case 5:
+                alert("5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15")
+                break;
+            case 6:
+                alert("6, 7, 8, 9, 10, 11, 12, 13, 14, 15")
+                break;
+            case 7:
+                alert("7, 8, 9, 10, 11, 12, 13, 14, 15")
+                break;
+            case 8:
+                alert("8, 9, 10, 11, 12, 13, 14, 15")
+                break;
+            case 9:
+                alert("9, 10, 11, 12, 13, 14, 15")
+                break;
+            case 10:
+                alert("10, 11, 12, 13, 14, 15")
+                break;
+            case 11:
+                alert("11, 12, 13, 14, 15")
+                break;
+            case 12:
+                alert("12, 13, 14, 15")
+                break;
+            case 13:
+                alert("13, 14, 15")
+                break;
+            case 14:
+                alert("14, 15")
+                break;
+            case 15:
+                alert("15")
+                break;
+            default:
+                alert("Число не в промежутке [1--15]")
+        }
+        
+        function sum(a, b){
+            var s = a + b;
+            return s;
+        }
+        function minus(a, b){
+            var s = a - b;
+            return s;
+        }
+        function delen(a, b){
+            var s = a / b;
+            return s;
+        }
+        function proiz(a, b){
+            var s = a * b;
+            return s;
+        }
+    
+        alert(sum(1, 2))
+        alert(minus(1, 2))
+        alert(delen(1, 2))
+        alert(proiz(1, 2))
+
+        var arg1 = parseInt(prompt('Введите первое число!'))
+        var arg2 = parseInt(prompt('Введите второе число!'))
+        var operaton = prompt('Введите знак операции: [ +, -, /, *')
+        function test(arg1,arg2,operaton){
+            switch(operaton){
+                case "+":
+                    alert(sum(arg1, arg2));
+                    break;
+                case "-":
+                    alert(sum(arg1, arg2));
+                    break;
+                case "/":
+                    alert(sum(arg1, arg2));
+                    break;
+                case "*":
+                    alert(sum(arg1, arg2));
+                    break;
+                default:
+                    alert("Неизвестная операция")
+            }
+        }
+        test(arg1, arg2, operaton)
+
+        //null - отсутсвие значения
+        //0 - это число
+
+        var val = parseInt(prompt('Введиче число для возведения в степень!'))
+        var pow = parseInt(prompt('Введите степень, в которую необходимо возвести число!'))
+        function recursion(val, pow){
+            return pow == 1 ? val : val * recursion (val, pow - 1)
+        }
+        alert(recursion(val, pow))
+
+    </script>
+</body>
+</html>

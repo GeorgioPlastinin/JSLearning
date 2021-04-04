@@ -20,7 +20,7 @@ var obj = {
  console.log(taskOne(num_obj))
 
 
- // Задание 1, варинат 2 в теле "else"
+ // Задание 1, варинат 2 в теле "else" //
 
  var num = prompt('Введите число от 0 до 999!')
 
